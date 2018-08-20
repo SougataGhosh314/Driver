@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/statesSpinner"
+        android:layout_width="160dp"
+        android:layout_height="34dp"
+        android:layout_alignEnd="@+id/fullName"
+        android:layout_alignTop="@+id/countrySpinner"
+        android:background="#D3D3D3" />
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 "
+        android:gravity="center_horizontal"
+        android:hint="Full Name"
+        android:inputType="textNoSuggestions" />
+
+    <EditText
+        android:id="@+id/vehicleType"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="158dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 "
+        android:gravity="center_horizontal"
+        android:hint="Vehicle Type"
+        android:inputType="textNoSuggestions" />
+
+    <EditText
+        android:id="@+id/phoneNumber_2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="233dp"
+        android:gravity="center_horizontal"
+        android:hint="Secondary Phone Number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/phoneNumber_1"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="244dp"
+        android:gravity="center_horizontal"
+        android:hint="Primary Phone Number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/regNumber"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+        android:gravity="center_horizontal"
+        android:hint="Registration Number"
+        android:inputType="textNoSuggestions" />
+
+    <Button
+        android:id="@+id/updateButton"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Toggle"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="details" />
+
+    <EditText
+        android:id="@+id/misc"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 "
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Misc."
+        android:inputType="textNoSuggestions" />
+
+    <Spinner
+        android:id="@+id/countrySpinner"
+        android:layout_width="160dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/fullName"
+        android:layout_marginTop="61dp"
+        android:background="#D3D3D3" />
+
+    <TextView
+        android:id="@+id/countryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fullName"
+        android:layout_below="@+id/show"
+        android:text="Country" />
+
+    <TextView
+        android:id="@+id/stateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show"
+        android:layout_toEndOf="@+id/show"
+        android:text="State" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="64dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/updateButton"
+        android:layout_marginStart="22dp"
+        android:text="Back" />
+
+</RelativeLayout>
